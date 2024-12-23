@@ -8,14 +8,14 @@
 // // ========================================
 
 declare type SignUpParams = {
-  firstName?: string;
-  lastName?: string;
-  address1?: string;
-  city?: string;
-  state?: string;
-  postalCode?: string;
-  dateOfBirth?: string;
-  ssn?: string;
+  firstName: string;
+  lastName: string;
+  address1: string;
+  city: string;
+  state: string;
+  postalCode: string;
+  dateOfBirth: string;
+  ssn: string;
   email: string;
   password: string;
 };
@@ -112,30 +112,30 @@ declare type Bank = {
 //   lastName: string;
 // };
 
-// declare type TransferParams = {
-//   sourceFundingSourceUrl: string;
-//   destinationFundingSourceUrl: string;
-//   amount: string;
-// };
+declare type TransferParams = {
+  sourceFundingSourceUrl: string;
+  destinationFundingSourceUrl: string;
+  amount: string;
+};
 
-// declare type AddFundingSourceParams = {
-//   dwollaCustomerId: string;
-//   processorToken: string;
-//   bankName: string;
-// };
+declare type AddFundingSourceParams = {
+  dwollaCustomerId: string;
+  processorToken: string;
+  bankName: string;
+};
 
-// declare type NewDwollaCustomerParams = {
-//   firstName: string;
-//   lastName: string;
-//   email: string;
-//   type: string;
-//   address1: string;
-//   city: string;
-//   state: string;
-//   postalCode: string;
-//   dateOfBirth: string;
-//   ssn: string;
-// };
+declare type NewDwollaCustomerParams = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  type: string;
+  address1: string;
+  city: string;
+  state: string;
+  postalCode: string;
+  dateOfBirth: string;
+  ssn: string;
+};
 
 // declare interface CreditCardProps {
 //   account: Account;
@@ -165,7 +165,7 @@ declare type Bank = {
 //   bottomTitle: string;
 //   topDescription: string;
 //   bottomDescription: string;
-//   connectBank?: boolean;
+  // connectBank?: boolean;
 // }
 
 // declare interface PaginationProps {
@@ -263,12 +263,12 @@ declare type Bank = {
 //   accessToken: string;
 // }
 
-// declare interface CreateFundingSourceOptions {
-//   customerId: string; // Dwolla Customer ID
-//   fundingSourceName: string; // Dwolla Funding Source Name
-//   plaidToken: string; // Plaid Account Processor Token
-//   _links: object; // Dwolla On Demand Authorization Link
-// }
+declare interface CreateFundingSourceOptions {
+  customerId: string; // Dwolla Customer ID
+  fundingSourceName: string; // Dwolla Funding Source Name
+  plaidToken: string; // Plaid Account Processor Token
+  _links: object; // Dwolla On Demand Authorization Link
+}
 
 // declare interface CreateTransactionProps {
 //   name: string;
@@ -298,14 +298,14 @@ declare type Bank = {
 //   user: User;
 // }
 
-// declare interface createBankAccountProps {
-//   accessToken: string;
-//   userId: string;
-//   accountId: string;
-//   bankId: string;
-//   fundingSourceUrl: string;
-//   sharableId: string;
-// }
+declare interface createBankAccountProps {
+  accessToken: string;
+  userId: string;
+  accountId: string;
+  bankId: string;
+  fundingSourceUrl: string;
+  shareableId: string;
+}
 
 // declare interface getBanksProps {
 //   userId: string;
