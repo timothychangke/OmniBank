@@ -1,9 +1,9 @@
 // /* eslint-disable no-unused-vars */
 
-// declare type SearchParamProps = {
-//   params: { [key: string]: string };
-//   searchParams: { [key: string]: string | string[] | undefined };
-// };
+declare type SearchParamProps = {
+  params: { [key: string]: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 
 // // ========================================
 
@@ -60,7 +60,7 @@ declare type Account = {
   type: string;
   subtype: string;
   appwriteItemId: string;
-  sharableId: string;
+  shareableId: string;
 };
 
 declare type Transaction = {
@@ -89,23 +89,18 @@ declare type Bank = {
   accessToken: string;
   fundingSourceUrl: string;
   userId: string;
-  sharableId: string;
+  shareableId: string;
 };
 
-// declare type AccountTypes =
-//   | "depository"
-//   | "credit"
-//   | "loan "
-//   | "investment"
-//   | "other";
+
 
 // declare type Category = "Food and Drink" | "Travel" | "Transfer";
 
-// declare type CategoryCount = {
-//   name: string;
-//   count: number;
-//   totalCount: number;
-// };
+declare type CategoryCount = {
+  name: string;
+  count: number;
+  totalCount: number;
+};
 
 // declare type Receiver = {
 //   firstName: string;
@@ -143,11 +138,11 @@ declare type NewDwollaCustomerParams = {
 //   showBalance?: boolean;
 // }
 
-// declare interface BankInfoProps {
-//   account: Account;
-//   appwriteItemId?: string;
-//   type: "full" | "card";
-// }
+declare interface BankInfoProps {
+  account: Account;
+  appwriteItemId?: string;
+  type: "full" | "card";
+}
 
 // declare interface HeaderBoxProps {
 //   type?: "title" | "greeting";
@@ -183,11 +178,11 @@ declare type NewDwollaCustomerParams = {
 //   type: "sign-in" | "sign-up";
 // }
 
-// declare interface BankDropdownProps {
-//   accounts: Account[];
-//   setValue?: UseFormSetValue<any>;
-//   otherStyles?: string;
-// }
+declare interface BankDropdownProps {
+  accounts: Account[];
+  setValue?: UseFormSetValue<any>;
+  otherStyles?: string;
+}
 
 // declare interface BankTabItemProps {
 //   account: Account;
@@ -270,15 +265,15 @@ declare interface CreateFundingSourceOptions {
   _links: object; // Dwolla On Demand Authorization Link
 }
 
-// declare interface CreateTransactionProps {
-//   name: string;
-//   amount: string;
-//   senderId: string;
-//   senderBankId: string;
-//   receiverId: string;
-//   receiverBankId: string;
-//   email: string;
-// }
+declare interface CreateTransactionProps {
+  name: string;
+  amount: string;
+  senderId: string;
+  senderBankId: string;
+  receiverId: string;
+  receiverBankId: string;
+  email: string;
+}
 
 // declare interface getTransactionsByBankIdProps {
 //   bankId: string;
